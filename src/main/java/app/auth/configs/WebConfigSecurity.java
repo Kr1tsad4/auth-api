@@ -34,6 +34,7 @@ public class WebConfigSecurity {
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/v1/users/**").authenticated()
+                        .requestMatchers("/api/v1/auth/logout").authenticated()
                         .anyRequest().permitAll()
                 ).exceptionHandling(exception -> exception
                         .authenticationEntryPoint(jwtAuthenticationEntryPoint)
