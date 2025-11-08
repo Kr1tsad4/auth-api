@@ -1,6 +1,6 @@
 # Auth API
 
-This project is an **Authentication API** supporting **Login, Register, and Logout** endpoints uses **JWT** for authentication and authorization.
+This project is an **Authentication API** supporting **Login, Register, and Logout** endpoints uses **JWT** for authentication and authorization, and securely hashing user passwords.
 
 ---
 
