@@ -71,6 +71,6 @@ The application will run at `http://localhost:8080`
 
 
 ## Notes
-- Endpoints that require authentication (Get user details, Logout) must include a **JWT token** in the `Authorization` header.
+- Endpoints that require authentication (Get user details, Logout) must include a JWT token in the Authorization header, obtained from the /auth/login response.
 - Refresh tokens are stored in **HTTP-only cookies** and do not need to be sent manually.
 - Users have `roles` and `status` (Active/Inactive) for access control.
