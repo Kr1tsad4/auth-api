@@ -19,7 +19,20 @@ This project is an **Authentication API** supporting **Login, Register, and Logo
 2. Create the database and run the SQL script `create_users_table.sql`
    
 3. Run the project:
-
+   
+   - **Using Maven to run the Spring Boot application:**
+   
+     ```bash
+     mvn spring-boot:run
+   
+   - **Or build and run the jar manually:**
+   
+     ```bash
+     # Build the jar file
+     mvn clean package
+   
+     # Run the jar file
+     java -jar target/auth-api-0.0.1-SNAPSHOT.jar
 
 The application will run at `http://localhost:8080`
 
